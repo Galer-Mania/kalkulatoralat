@@ -1,0 +1,40 @@
+.lock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(186,186,215,1) 0%, rgba(0,212,255,1) 100%);
+}
+input,button{
+    width: 300px;
+    height: 50%;
+    background-color: white;
+}
+button{
+    border: none;
+    background-color: purple;
+    color: yellow;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 1s;
+}
+button:hover{
+    border-radius: 200px;
+}
+input{
+    border: none;
+    padding: 8px;
+    margin: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+    background: crimson;
+    color: white;
+}
+input::placeholder{
+    color: white;
+}

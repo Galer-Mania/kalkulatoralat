@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="lock">
+
+        <input class="namaAlat" type="text" placeholder="Nama Alat">
+        
+        <input class="jumlah" type="text" placeholder="Jumlah Alat">
+        
+        <input class="harga" type="text" placeholder="Harga Alat">
+        
+        <button>Hitung Total</button>
+    
+    
+        </div>
+        
+    <script>
+        
+            const btn = document.querySelector('button')
+            const namaAlat = document.querySelector('.namaAlat')
+            const jumlah = document.querySelector('.jumlah')
+            const harga = document.querySelector('.harga')
+
+            btn.addEventListener('click', function(){
+              if(!namaAlat.value && !jumlah.value && !harga.value){
+                alert('kamu belum ngisi apapun!')
+              }else{
+                alert(`Alat yang kamu ambil : ${namaAlat.value}`)
+                alert(`Jumlah: ${jumlah.value} * harga/alat : ${harga.value} = Rp. ${jumlah.value} * ${harga.value} ,-`)
+              }
+            })
+
+
+    </script>
+</body>
+</html>
